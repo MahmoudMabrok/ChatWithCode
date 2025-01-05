@@ -9,6 +9,11 @@ This project provides ready to use chat with already codebase that was locally o
 I needed to have ability to chat with my private repo (suitable for company that seek privacy) so i developed this app. 
 
 
+## Demo 
+As example i used next [repo](https://github.com/MahmoudMabrok/QuranyApp) as knowledge base and result : 
+![Screenshot 2025-01-05 at 3 31 19 PM](https://github.com/user-attachments/assets/5341074a-a535-4ba7-a8ee-852744bfac22)
+
+
 ## How to use 
 - install **Ollama**
 - pull model `deepseek-coder-v2`
