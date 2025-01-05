@@ -1,5 +1,5 @@
 # Chat with Code 
-Local chat with codebase app built using Ollama as LLM and lang chain as framework. 
+Local chat with your local git based repository, built using Ollama, HuggingFaceEmbeddings, LangChain. 
 
 
 ## How to use 
