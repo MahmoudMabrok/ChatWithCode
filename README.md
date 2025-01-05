@@ -2,6 +2,13 @@
 Local chat with your local git based repository, built using Ollama, HuggingFaceEmbeddings, LangChain. 
 
 
+## Introduction 
+This project provides ready to use chat with already codebase that was locally on machine, so it is readt to run and use. To use it please update knowledge base with your repo then run it again. 
+
+## Why this project? 
+I needed to have ability to chat with my private repo (suitable for company that seek privacy) so i developed this app. 
+
+
 ## How to use 
 - install **Ollama**
 - pull model `deepseek-coder-v2`
@@ -25,10 +32,6 @@ for file in repo.tree().traverse():
     if file.type == "blob":
         if file.name.endswith((".js", ".tsx", ".jsx")):  # Handle JavaScript files
             file_content = file.data_stream.read().decode("utf-8")
-             
-            # text_splitter = CharacterTextSplitter(chunk_size=2000, chunk_overlap=200)
-            # chunks = text_splitter.split_text(file_content)
-            # file_texts.extend(chunks)
 
             js_splitter = RecursiveCharacterTextSplitter.from_language(
                 language=Language.JS, chunk_size=200, chunk_overlap=0
@@ -44,5 +47,7 @@ vectorstore.save_local("vector_store_index")
 
 
 ```
-then when `vectorstore` is saved you can uncomment these lines, and use `vectorstore = FAISS.load_local("vector_store_index",embeddings, allow_dangerous_deserialization=True )
-` normally. 
+then when `vectorstore` is saved you can comment above lines, and use: 
+```python
+vectorstore = FAISS.load_local("vector_store_index",embeddings, allow_dangerous_deserialization=True )
+```
