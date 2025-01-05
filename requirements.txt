@@ -1,0 +1,23 @@
+# Core Libraries
+torch==2.0.1
+
+# Hugging Face Libraries
+transformers
+sentence-transformers
+
+# LangChain Libraries
+langchain
+langchain-community
+
+# Git Integration
+GitPython
+
+# Ollama (for running LLaMA locally)
+ollama
+
+# FAISS for Vector Storage
+faiss-cpu
+
+# Additional Utilities
+numpy==1.25.2
+tqdm==4.66.1
