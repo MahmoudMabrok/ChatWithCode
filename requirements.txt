@@ -22,5 +22,4 @@ faiss-cpu
 numpy==1.25.2
 tqdm==4.66.1
 
-
 streamlit
