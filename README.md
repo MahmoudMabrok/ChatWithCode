@@ -56,3 +56,9 @@ then when `vectorstore` is saved you can comment above lines, and use:
 ```python
 vectorstore = FAISS.load_local("vector_store_index",embeddings, allow_dangerous_deserialization=True )
 ```
+
+# Inspiration
+I have inspired from many projects, but i did not get what i want exactly. 
+- [chat_with_github](https://github.com/Shubhamsaboo/awesome-llm-apps/tree/main/chat_with_X_tutorials/chat_with_github)
+- [QA-Pilot](https://github.com/reid41/QA-Pilot)
+
