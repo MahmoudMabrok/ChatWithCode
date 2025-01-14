@@ -19,7 +19,7 @@ As example i used next [repo](https://github.com/MahmoudMabrok/QuranyApp) as kno
 - pull model `deepseek-coder-v2` using `ollama pull deepseek-coder-v2:16b`
 - install python 3.11
 - run `pip3 install -r requirements.txt`
-- run `python3.11 -m streamlit app.py`
+- run `python3.11 -m streamlit run app.py`
 
 ## Update Knowledge base 
 To update KB we need to chunck codebase and make embededings then save to **FAISS**
